@@ -1,1 +1,268 @@
-# project
+<!DOCTYPE html>
+<html>
+<title>Sam Mee Gin Lank</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAu9nyACo5awAMHlkAbrXwAJ3N9QDpzfcA5O31AH5C7QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzMAAAADNFVVVDMAADRFV3dVRDAANFVzg3UUMAA0VVc3VVQwADRTJVUyVDAANFM1VTNUMAADRVVVVVMAADNFVVVVUzADZkRVVVVWYwNGMzMzMzZDA0QwAAAANEMAMwAAAAADMAAAAAAAAAAAAAAAAAAAAAD//wAA+A8AAOADAADAAQAAwAEAAMABAADAAQAAwAEAAOADAADAAQAAgAAAAIAAAACH8AAAz/kAAP//AAD//wAA" rel="icon" type="image/x-icon" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+</style>
+<body>
+
+<header class="w3-display-container w3-content" style="max-width:1600px;" id="home">
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-row ">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="w3-dropdown-hover w3-hide-small w3-third tablink w3-bottombar  w3-padding">
+      <a href="https://waranyu.github.io/Home/" class=" w3-button "><i class="fa fa-home"></i> หน้าแรก</a>
+      </div>
+
+
+
+       <div class="w3-dropdown-hover w3-hide-small w3-third tablink w3-bottombar  w3-padding">
+        <button class=" w3-button  " title="More"><i class="fa fa-cutlery"></i> ร้านอาหาร <i class="fa fa-caret-down"></i> </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://waranyu.github.io/payad/." class="w3-bar-item w3-button">ครัว ปะ-หยัด</a>
+          <a href="https://waranyu.github.io/hokkaido/" class="w3-bar-item w3-button">ฮอกไกโด</a>
+          <a href="https://waranyu.github.io/padthai/" class="w3-bar-item w3-button">ผัดไทย กระเพาะปลา ไทยอาคาร</a>
+          <a href="https://waranyu.github.io/joke/" class="w3-bar-item w3-button">โจ๊กหม้อเดิบ</a>
+          <a href="https://waranyu.github.io/chabura/" class="w3-bar-item w3-button">ติ่มซำชาบูระ</a>
+        </div>
+      </div>
+
+
+
+      <div class="w3-dropdown-hover w3-hide-small w3-third tablink w3-bottombar w3-padding">
+        <button class="w3-button" title="More"><i class="fa fa-th"></i> หมวดหมู่อาหาร <i class="fa fa-caret-down"></i> </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://waranyu.github.io/snack/" class="w3-bar-item w3-button">อาหารว่าง</a>
+          <a href="https://waranyu.github.io/main-course/" class="w3-bar-item w3-button">อาหารจานหลัก</a>
+          <a href="https://waranyu.github.io/Dessert/" class="w3-bar-item w3-button">เครื่องดื่มและของหวาน</a>
+         </div>
+      </div>
+
+  </div>
+
+  </div>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top w3-row ">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="w3-dropdown-hover w3-hide-small w3-third tablink w3-bottombar  w3-padding">
+      <a href="https://waranyu.github.io/Home/" class=" w3-button "><i class="fa fa-home"></i> หน้าแรก</a>
+      </div>
+
+
+
+       <div class="w3-dropdown-hover w3-hide-small w3-third tablink w3-bottombar  w3-padding">
+        <button class=" w3-button  " title="More"><i class="fa fa-cutlery"></i> ร้านอาหาร <i class="fa fa-caret-down"></i> </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://waranyu.github.io/payad/." class="w3-bar-item w3-button">ครัว ปะ-หยัด</a>
+          <a href="https://waranyu.github.io/hokkaido/" class="w3-bar-item w3-button">ฮอกไกโด</a>
+          <a href="https://waranyu.github.io/padthai/" class="w3-bar-item w3-button">ผัดไทย กระเพาะปลา ไทยอาคาร</a>
+          <a href="https://waranyu.github.io/joke/" class="w3-bar-item w3-button">โจ๊กหม้อเดิบ</a>
+          <a href="https://waranyu.github.io/chabura/" class="w3-bar-item w3-button">ติ่มซำชาบูระ</a>
+        </div>
+      </div>
+
+
+
+      <div class="w3-dropdown-hover w3-hide-small w3-third tablink w3-bottombar w3-padding">
+        <button class="w3-button" title="More"><i class="fa fa-th"></i> หมวดหมู่อาหาร <i class="fa fa-caret-down"></i> </button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://waranyu.github.io/snack/" class="w3-bar-item w3-button">อาหารว่าง</a>
+          <a href="https://waranyu.github.io/main-course/" class="w3-bar-item w3-button">อาหารจานหลัก</a>
+          <a href="https://waranyu.github.io/Dessert/" class="w3-bar-item w3-button">เครื่องดื่มและของหวาน</a>
+         </div>
+      </div>
+
+  </div>
+  </div>
+ 		<!-- Logo Text -->
+ 		<div class="w3-display-container w3-opacity-min" id="head">
+ 		<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;" id="home">
+ 		  <img class="w3-image" src="1.gif" alt="GIF" width="1600" height="800">
+ 		</header>
+ 			<div class="w3-display-middle" style="white-space:nowrap;">
+ 				<span class="w3-center w3-padding-large w3-black w3-xxxlarge w3-wide w3-animate-opacity">- เครื่องดื่มและของหวาน -</span>
+ 			</div>
+ 		</div>
+
+    <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+     <div class="w3-quarter w3-col m6 w3-center w3-padding-large">
+       <img src="1.jpg" class="w3-round w3-image w3-hover-opacity-off" onclick="onClick(this)" alt="โจ๊กหม้อเติบ" width="50%" height="30%">
+     </div>
+
+     <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+ 	    <h2 class="w3-center">นมแพะร้อน</h2>
+      <hr>
+      <a href="https://waranyu.github.io/payad/"><h5 class="w3-center w3-padding"><span class="w3-tag w3-wide" >ติ่มซำชาบูระ</span></h5></a>
+ 	    <p>นมแพะร้อนๆ เหมาะกับการทานตอนเช้า หอมกลิ่นนมอ่อนๆ และความสดใหม่ของนมแพะ ของที่หาทานได้ค่อนข้างยากแต่สามารถมาสัมผัสได้ที่นี่...ติ่มซำชาบูระ</p>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">x</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Hide this text on small devices -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h2 class="w3-center">ชาเย็น</h2>
+      <hr>
+        <a href="https://waranyu.github.io/payad/"><h5 class="w3-center w3-padding"><span class="w3-tag w3-wide" >ติ่มซำชาบูระ</span></h5></a>
+	    <p>ชาเย็นรสเข้ม ทานควบคู่กับเมนูอิสลามต่างๆที่หลากหลาย เมนูเบสิกที่ทุ่มใจให้เพราะรสชาติชาที่ยังคงมีไม่ถูกนมกลบไปหมด อยากดับร้อนก็แวะไปได้เสมอ</p>
+     </div>
+     <div class="w3-quarter w3-col m6 w3-center w3-padding-large">
+     <img src="2.jpg" class="w3-round w3-image w3-hover-opacity-off" onclick="onClick(this)" alt="ผัดไทย กระเพาะปลา ไทยอาคาร" width="500" height="333">
+    </div>
+  </div>
+<hr>
+
+<!-- Hide this text on small devices -->
+<div class="w3-row w3-grayscale-min">
+   <div class="w3-quarter w3-col m6 w3-center w3-padding-large">
+
+     <img src="5.jpg" class="w3-round w3-image w3-hover-opacity-off" onclick="onClick(this)" alt="ติ่มซำชาบูระ" width="500" height="333">
+   </div>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h2 class="w3-center">น้ำอัดลม</h2>
+      <hr>
+        <a href="https://waranyu.github.io/payad/"><h5 class="w3-center w3-padding"><span class="w3-tag w3-wide" >ครัว ปะ-หยัด</span></h5></a>
+	<p>น้ำอัดลมของทานร้านครัว ปะ-หยัด ซึ่งมีน้ำอัดลมพื้นฐานที่เป็นที่ต้องการของผู้บริโภคทั่วไป ทั้งยังมีน้ำผลไม้ที่มีการคัดสรรมาอย่างดีอีกด้วย</p>
+
+    </div>
+  </div>
+  <hr>
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">x</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Hide this text on small devices -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h2 class="w3-center">น้ำดื่มยี่ห้อ เจ๊ฮวง</h2>
+      <hr>
+        <a href="https://waranyu.github.io/payad/"><h5 class="w3-center w3-padding"><span class="w3-tag w3-wide" >ผัดไทยกระเพาะปลา ไทยอาคาร</span></h5></a>
+	    <p>โดดเด่นมากกกกก มีความครีเอทจากการทำน้ำดื่มเป็นของตัวเอง น้ำเปล่าแสนสะอาดที่ผ่านกระบวนการกรองอย่างดี รูปลักษณ์ที่น่ารัก แถมด้วยโลโก้ที่แสนโดดเด่น น้ำเปล่าเดิมๆกลับมีความพิเศษได้หากคุณใส่ใจ</p>
+     </div>
+     <div class="w3-quarter w3-col m6 w3-center w3-padding-large">
+     <img src="7.jpg" class="w3-round w3-image w3-hover-opacity-off" onclick="onClick(this)" alt="ผัดไทย กระเพาะปลา ไทยอาคาร" width="500" height="333">
+    </div>
+  </div>
+<hr>
+
+<!-- Hide this text on small devices -->
+<div class="w3-row w3-grayscale-min">
+   <div class="w3-quarter w3-col m6 w3-center w3-padding-large">
+
+     <img src="8.jpg" class="w3-round w3-image w3-hover-opacity-off" onclick="onClick(this)" alt="ติ่มซำชาบูระ" width="50%" height="30%">
+   </div>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h2 class="w3-center">น้ำเสาวรส</h2>
+      <hr>
+        <a href="https://waranyu.github.io/payad/"><h5 class="w3-center w3-padding"><span class="w3-tag w3-wide" >ผัดไทยกระเพาะปลา ไทยอาคาร</span></h5></a>
+	<p>ร้านนี้นอกจากโดดเด่นด้วยอาหารแล้ว เครื่องดื่มชวนร้องว้าวมาก น้ำเสาวรสสดใหม่ บรรจุในขวดที่ออกแบบกันเอง ทานคู่กับผัดไทยก็ได้รสชาติที่ลงตัวดีเหมือนกัน</p>
+    </div>
+  </div>
+  <hr>
+  <!-- Hide this text on small devices -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h2 class="w3-center">ชาเขียว</h2>
+      <hr>
+        <a href="https://waranyu.github.io/payad/"><h5 class="w3-center w3-padding"><span class="w3-tag w3-wide" >ฮอกไกโด</span></h5></a>
+      <p>ทางร้านมีเครื่องดื่มที่หลากหลาย ทั้งชา น้ำผลไม้ทั่วไป รวมถึงเครื่องดื่มแอลกอฮอล์ หลักๆที่มักจะทานคู่กับอาหารญี่ปุ่นก็คือ ชาเขียว นั่นเอง ของทานร้านก็จะเป็นชาเขียวที่ได้กลื่นชามาแต่ไกล เมื่อได้จิบแล้วสาวกชาคงถูกใจในเอกลักษณ์เฉพาะของชาเขียว</p>
+     </div>
+     <div class="w3-quarter w3-col m6 w3-center w3-padding-large">
+     <img src="10.jpg" class="w3-round w3-image w3-hover-opacity-off" onclick="onClick(this)" alt="ผัดไทย กระเพาะปลา ไทยอาคาร" width="500" height="333">
+    </div>
+  </div>
+  <hr>
+
+  <!-- Hide this text on small devices -->
+  <div class="w3-row w3-grayscale-min">
+   <div class="w3-quarter w3-col m6 w3-center w3-padding-large">
+
+     <img src="6.jpg" class="w3-round w3-image w3-hover-opacity-off" onclick="onClick(this)" alt="ติ่มซำชาบูระ" width="500" height="333">
+   </div>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <h2 class="w3-center">ไอศกรีมรสทิรามิสุ</h2>
+      <hr>
+      <a href="https://waranyu.github.io/payad/"><h5 class="w3-center w3-padding"><span class="w3-tag w3-wide" >ฮอกไกโด</span></h5></a>
+  <p>ที่นี่มีความพิเศษคือการทำไอศกรีมแฮนเมดของตัวเอง รสชาติมีให้เลือกหลากหลาย ทั้งรสชาติที่เฉพาะของไทยเอง หรือรสชาติสากลที่สามารถเลือกหยิบกันได้
+    ที่แนะนำเลยคือทิรามิสุ มีความขมๆของกาแฟ และความหวานเข้มๆของไอศกรีม อร่อยดี</p>
+    </div>
+  </div>
+  <hr>
+
+
+<!-- footer -->
+    <!-- footer -->
+    <footer class="w3-center w3-black w3-padding-32 w3-graycale">
+        <p>ABOUT ME</p>
+		<p>หมีใหญ่ ความเป็นพี่ใหญ่ของกลุ่ม พี่หมู ผู้เป็นใหญ่ในการกินแหลกมาแทบทุกร้านในหาดใหญ่<br>
+           หมีกลาง ความตะมุตะมิของกลุ่ม ชายโม ผู้เป็นดั่งกระเป๋าตังค์ของกลุ่ม จ่ายหนักกินหนักทุกร้าน<br>
+           หมีเล็ก สาวน้อยตัวเล็ก(?)หนึ่งเดียวในกลุ่ม หญิงช่า ผู้ที่สวยสุดและสั่งแหลก แต่กินไม่เคยหมด -*-
+        </p>
+    </footer>
+<!-- Change style of navbar on scroll-->
+
+<script>
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
